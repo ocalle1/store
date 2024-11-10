@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    --mainColor: rgb(69, 20, 205);
+    --mainColorLight: green;
+    --secondaryColor: red;
+    --textColor: rgb(123, 70, 70);
+}
+
+header {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 80px; */
+    width: 100%;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    position: relative;
+}
+
+/* 
+header .logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+
+
+header .logo {
+    flex: 1;
+    /* Allow logo to take space in the flexbox layout */
+    display: flex;
+    justify-content: flex-start;
+    /* Align logo to the left */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    top: 10p0x;
+    /* Center the nav links */
+    flex: 2;
+    /* To allow space for the logo and make nav take up the center */
+}
+
+/* nav a {
+    max-width: 0 2rem;
+    color: white;
+    text-decoration: none;
+} */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+header .nav-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+    right: 1rem;
+    /* top: 50%; */
+    position: absolute;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+}
+
+header .responsive_nav {
+    transform: none;
+}
+
+nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    /* visibility: hidden; */
+}

@@ -1,9 +1,7 @@
-.header {
+/* .header {
     display: flex;
     align-items: center;
-    /* Center items vertically */
     justify-content: center;
-    /* Center items horizontally */
     width: 100%;
     background-color: rgba(103, 19, 104, 0.9);
     color: white;
@@ -13,15 +11,31 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-}
+} */
 
+/* .header-contaioner { */
+/* display: flex; */
+/* align-items: center; */
+/* Center items vertically */
+/* justify-content: center; */
+/* Center items horizontally */
+/* width: 100%; */
+/* background-color: rgba(103, 19, 104, 0.9); */
+/* color: white; */
+/* padding: 10px; */
+/* font-size: 20px; */
+/* box-sizing: border-box; */
+/* position: fixed; */
+/* top: 0; */
+/* z-index: 1000; */
+/* } */
 
-.storeName {
+/* .storeName {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-}
+} */
 
 .menuContainer {
     position: relative;
@@ -67,3 +81,16 @@ li:hover {
     background-color: rgba(0, 0, 0, 0.14);
     cursor: pointer;
 }
+
+/* nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} */
