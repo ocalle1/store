@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Header.css';
 // import Diamond from './images/DiamondHeader';
-import { ReactComponent as Diamond } from './images/Diamond.svg';
+import { ReactComponent as Diamond } from '../images/Diamond.svg';
 
 
 function Header() {

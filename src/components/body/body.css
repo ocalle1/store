@@ -1,4 +1,26 @@
+.section_padding_body {
+    padding: 0rem 0rem;
+
+}
+
+.sb_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sb_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
 .cards-container {
+    /* color for rough copy of code */
+    background-color: green;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

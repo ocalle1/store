@@ -9,8 +9,13 @@ function Footer() {
         <>
             <div className="footer">
                 <div className="sb_footer section_padding">
+
+                    {/* <div className="sb_footing-heading">
+                        <h1>Stay Connected</h1>
+                    </div> */}
+
                     <div className="sb_footer-links">
-                        <div className="sb_footer-links_div">
+                        <div className="sb_footer-links_div sb_footing-heading">
                             <h4>Contact</h4>
                             <a href="/employee">
                                 <p>Employee</p>
