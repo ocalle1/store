@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"
 import './Navbar.css'
+// import { Routes } from 'react-router-dom';
 
 
 function Navbar() {
@@ -19,14 +20,18 @@ function Navbar() {
         <>
             <header>
                 <div className="logo">
-                    <h3>Logo</h3>
+                    <h3>Jewelry store</h3>
                 </div>
                 {/* <h3>Logo</h3> */}
                 <nav ref={navRef}>
+                    {/* <Routes> */}
                     <a href="/#">Home</a>
                     <a href="/#">Work</a>
                     <a href="/#">Blog</a>
                     <a href="/#">About me</a>
+
+
+                    {/* </Routes> */}
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />
                     </button>

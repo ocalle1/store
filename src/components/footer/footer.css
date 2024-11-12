@@ -2,11 +2,11 @@
     padding: 4rem 4rem;
 }
 
-.footer {
-    /* this is the color that I want */
-    /* background-color: #282c34 */
-    background-color: red
-}
+/* .footer { */
+/* this is the color that I want */
+/* background-color: #282c34 */
+/* background-color: red */
+/* } */
 
 .sb_footer {
     display: flex;
@@ -14,12 +14,13 @@
 }
 
 .sb_footer-links {
+    padding: 4rem 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 110%;
+    /* width: 110%; */
     text-align: left;
     margin-bottom: 2rem;
 }
@@ -30,12 +31,25 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    color: rgb(232, 98, 100);
+    color: rgb(100, 68, 188);
 }
 
 a {
     color: azure;
     text-decoration: none;
+    font-size: 20px;
+}
+
+p {
+    color: azure;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sb_footer-links p {
+    color: azure;
+    text-decoration: none;
+    font-size: 200px;
 }
 
 .socialmedia {
@@ -58,6 +72,16 @@ a {
     line-height: 15px;
     margin: 0.5rem 0;
     cursor: pointer;
+    color: beige;
+    font-size: 16px;
+}
+
+.sb_footer-links_div h4 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: rgb(224, 115, 134);
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 850px) {

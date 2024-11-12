@@ -6,10 +6,10 @@
 }
 
 :root {
-    --mainColor: rgb(69, 20, 205);
-    --mainColorLight: green;
-    --secondaryColor: red;
-    --textColor: rgb(123, 70, 70);
+    --mainColor: rgb(100, 68, 188);
+    --mainColorLight: rgb(149, 191, 221);
+    --secondaryColor: rgb(136, 108, 130);
+    --textColor: rgb(149, 191, 221);
 }
 
 header {
@@ -17,25 +17,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* height: 80px; */
     width: 100%;
     padding: 0 2rem;
-    background-color: var(--mainColor);
+    /* background-color: var(--mainColor); */
     color: var(--textColor);
     position: relative;
 }
 
-/* 
 header .logo {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-} */
-
-
-header .logo {
-    flex: 1;
+    flex: 4;
     /* Allow logo to take space in the flexbox layout */
     display: flex;
     justify-content: flex-start;
@@ -57,9 +47,10 @@ nav {
     text-decoration: none;
 } */
 nav a {
-    color: white;
+    color: rgb(149, 191, 221);
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-weight: 500;
 }
 
 nav a:hover {

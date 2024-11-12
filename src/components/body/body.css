@@ -20,7 +20,7 @@
 
 .cards-container {
     /* color for rough copy of code */
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -62,14 +62,14 @@
 .card1 .gold-1-title {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: burlywood;
+    color: rgb(233, 231, 229);
     font-size: 20px;
 }
 
 .card1 .gold-1-description {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: coral;
+    color: rgb(136, 163, 209);
     font-size: 20px;
     white-space: inherit;
 }
@@ -96,20 +96,19 @@
     height: auto;
     border-radius: 40%;
     margin-bottom: 10px;
-    /* overflow: scroll; */
 }
 
 .card2 .silver-1-title {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: burlywood;
+    color: rgb(233, 231, 229);
     font-size: 20px;
 }
 
 .card2 .silver-1-description {
     font-family: Arial, sans-serif;
     margin: 0;
-    color: coral;
+    color: rgb(136, 163, 209);
     font-size: 20px;
     white-space: inherit;
 }
