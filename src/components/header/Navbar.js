@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"
 import './Navbar.css'
-// import { Routes } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +10,6 @@ function Navbar() {
     // const showNavbar = () => {
     //     navRef.current.classList.toggle("responsive_nav")
     // }
-
     const showNavbar = () => {
         setIsMenuOpen(!isMenuOpen); // Toggle menu state
         navRef.current.classList.toggle("responsive_nav"); // Add or remove the class to display the nav
@@ -25,26 +23,25 @@ function Navbar() {
                 {/* <h3>Logo</h3> */}
                 <nav ref={navRef}>
                     {/* <Routes> */}
-                    <a href="/#">Home</a>
+                    {/* <a href="/#">Home</a>
                     <a href="/#">Work</a>
                     <a href="/#">Blog</a>
-                    <a href="/#">About me</a>
-
-
+                    <a href="/#">About me</a> */}
                     {/* </Routes> */}
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes />
                     </button>
                 </nav>
                 {!isMenuOpen && (
-
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaBars />
                     </button>
                 )
-
                 }
-            </header>
+                <Link to="/home"><button>Home</button></Link>
+                <Link to="/about"><button>About</button></Link>
+
+            </header >
         </>
     )
 };

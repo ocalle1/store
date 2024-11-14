@@ -6,12 +6,16 @@ import goldChain2 from '../images/goldChain2.webp';
 import goldChain3 from '../images/goldChain3.webp';
 import silverChain1 from '../images/silverChain1.webp';
 import Card2 from "../gold-images-cards/silverImages";
+import { Link } from "react-router-dom";
 
 
 
 function Body() {
     return (
         <>
+
+            <Link to="/body"><button>Body</button></Link>
+
             <div className="cards-container section_padding_body">
                 <div className="sb_body">
                     <div className="sb_card">

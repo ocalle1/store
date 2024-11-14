@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 
 
 function Header() {
-
     const [open, setOpen] = useState(false);
 
     // Toggle function for the dropdown
