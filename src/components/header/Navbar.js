@@ -1,14 +1,16 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "../Home";
+import { Route, Routes, Link } from "react-router-dom";
+import Home from "../page-links/Home";
 
 
-function Navbar(){
-    return(
+function Navbar() {
+    return (
         <>
-        <h1>Header</h1>
-       
-        <Link to='/'><button>Home</button></Link>
+            <h1>Header</h1>
+
+            <Link to='/'><button>Home</button></Link>
+            <Link to='/about'><button>About</button></Link>
+            <Link to='/body'><button>Body</button></Link>
         </>
     )
 };
