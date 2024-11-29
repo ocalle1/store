@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Routes, Link } from "react-router-dom";
 import Home from "../page-links/Home";
-
+import StoreItems from "../body_store_items/StoreItems";
+import Gold from "../body_store_items/Gold";
 
 function Navbar() {
     return (
@@ -10,7 +11,7 @@ function Navbar() {
 
             <Link to='/'><button>Home</button></Link>
             <Link to='/about'><button>About</button></Link>
-            <Link to='/body'><button>Body</button></Link>
+            <Link to='/body'><button>Body Page</button></Link>
         </>
     )
 };
